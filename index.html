@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    
+</head>
+<body>
+    <div class="bg-dots"></div>
+
+    <div class="container">
+        <!-- Registration Form -->
+        <div class="form-container" id="register-form">
+            <h2>Join Us</h2>
+            <div class="form-group">
+                <label for="reg-username">Username</label>
+                <input type="text" id="reg-username" placeholder="Choose a username">
+                <div class="error-message" id="reg-username-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="reg-password">Password</label>
+                <div style="position: relative;">
+                    <input type="password" id="reg-password" placeholder="Create a password">
+                    <span class="password-toggle" id="reg-toggle"><i class="far fa-eye"></i></span>
+                </div>
+                <div class="error-message" id="reg-password-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <div style="position: relative;">
+                    <input type="password" id="confirm-password" placeholder="Confirm your password">
+                    <span class="password-toggle" id="confirm-toggle"><i class="far fa-eye"></i></span>
+                </div>
+                <div class="error-message" id="confirm-password-error"></div>
+            </div>
+            <div class="form-group">
+                <button id="register-btn" class="btn-with-loader">
+                    <span>Get Started</span>
+                    <div class="loader" id="register-loader"></div>
+                </button>
+            </div>
+            <div class="toggle-form">
+                Already have an account? <a id="show-login">Sign In</a>
+            </div>
+            <div class="success-message" id="register-success">Registration successful! You can now login.</div>
+        </div>
+
+        <!-- Login Form -->
+        <div class="form-container" id="login-form" style="display: none; opacity: 0; transform: translateX(30px);">
+            <h2>Welcome Back</h2>
+            <div class="form-group">
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" placeholder="Enter your username">
+                <div class="error-message" id="login-username-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <div style="position: relative;">
+                    <input type="password" id="login-password" placeholder="Enter your password">
+                    <span class="password-toggle" id="login-toggle"><i class="far fa-eye"></i></span>
+                </div>
+                <div class="error-message" id="login-password-error"></div>
+            </div>
+            <div class="form-group">
+                <button id="login-btn" class="btn-with-loader">
+                    <span>Login</span>
+                    <div class="loader" id="login-loader"></div>
+                </button>
+            </div>
+            <div class="toggle-form">
+                Don't have an account? <a id="show-register">Join Us</a>
+            </div>
+        </div>
+
+        <!-- Secured Page -->
+        <div class="secured-page" id="secured-page">
+            <h2><i class="fas fa-lock"></i> Creative Space</h2>
+            <p>Welcome, <span id="user-display"></span>! You're now part of our creative community.</p>
+            
+            <div class="secured-content">
+                <h3>Exclusive Content</h3>
+                <p>This content is reserved for our creative members.</p>
+            </div>
+            
+            <button class="logout-btn" id="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code would be the same as the original
+        // Only the styling has been changed
+        document.addEventListener('DOMContentLoaded', function() {
+            // ... (same JavaScript code as the original)
+        });
+    </script>
+</body>
+</html>
